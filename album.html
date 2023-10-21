@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album API</title>
+    <style>
+        h1{
+            text-align: center;
+            padding-top: 6rem;
+        }
+        #albums{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;  
+        }
+        .album{
+            border: 2px solid green;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        button{
+            margin-left: 35rem;
+        }
+        nav{
+            width: 96%;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            /* justify-content: space-around; */
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+        }
+        nav ul li{
+            margin: 1rem 2rem;
+        }
+        nav ul li a{
+           text-decoration: none;
+           color: rgb(238, 52, 52);
+           font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Users</a>
+            </li>
+            <li>
+                <a href="post.html">Posts</a>
+            </li>
+            <li>
+                <a href="comment.html">Comments</a>
+            </li>
+            <li>
+                <a href="album.html">Albums</a>
+            </li>
+            <li>
+                <a href="photo.html">Photos</a>
+            </li>
+            <li>
+                <a href="todo.html">Todos</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Hellow Alubum API</h1>
+    <div id="albums">
+
+    </div>
+
+    <button onclick="loadAlbum()">Load Album</button>
+
+    <script src="js/album.js"></script>
+</body>
+</html>
